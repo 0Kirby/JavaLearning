@@ -1,0 +1,13 @@
+package com.test.tencentapi.scf;
+
+public class U0027 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String s = "abc"+"\\u0027";
+		System.out.println(s);
+		String s1=s.replaceAll("\\\u0027", "1");
+		System.out.println(s1);
+	}
+
+}

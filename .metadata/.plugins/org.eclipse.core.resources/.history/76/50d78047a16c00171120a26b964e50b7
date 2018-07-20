@@ -1,0 +1,24 @@
+package zuche;
+
+public class Truck extends Vehicle{
+
+	private int goods;
+
+	public Truck() {
+		super();
+	}
+
+	public Truck(int number, String name, int money, int goods) {
+		super();
+		this.goods = goods;
+	}
+
+	public int getGoods() {
+		return goods;
+	}
+
+	public void setGoods(int goods) {
+		this.goods = goods;
+	}
+	
+}

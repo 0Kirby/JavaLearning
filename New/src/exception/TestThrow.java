@@ -1,0 +1,19 @@
+package exception;
+
+public class TestThrow {
+	static void pop() throws NegativeArraySizeException {  
+        // 定义方法并抛出NegativeArraySizeException异常  
+        int[] arr = new int[-1];
+        arr[1] = 1;
+        // 创建数组  
+    }  
+  
+    public static void main(String[] args) { // 主方法  
+        try { // try语句处理异常信息  
+            pop();// 调用pop()方法  
+        } catch (NegativeArraySizeException e) {  
+            System.out.println("pop()方法抛出的异常");// 输出异常信息  
+        }  
+    }  
+  
+}  

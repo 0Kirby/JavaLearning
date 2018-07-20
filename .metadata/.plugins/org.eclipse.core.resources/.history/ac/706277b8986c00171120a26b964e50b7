@@ -1,0 +1,5 @@
+package zuche;
+
+public interface Complex implements Coach {
+
+}
