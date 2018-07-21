@@ -21,12 +21,12 @@ package com.xqjtqy.www.scf.v20180416;
 import java.lang.reflect.Type;
 import com.google.gson.JsonSyntaxException;
 import com.google.gson.reflect.TypeToken;
-import www.xqjtqy.com.secondclassactivity.common.exception.TencentCloudSDKException;
-import www.xqjtqy.com.secondclassactivity.common.AbstractClient;
-import www.xqjtqy.com.secondclassactivity.common.profile.ClientProfile;
-import www.xqjtqy.com.secondclassactivity.common.JsonResponseModel;
-import www.xqjtqy.com.secondclassactivity.common.Credential;
-import www.xqjtqy.com.secondclassactivity.scf.v20180416.models.*;
+import com.xqjtqy.www.common.exception.TencentCloudSDKException;
+import com.xqjtqy.www.common.AbstractClient;
+import com.xqjtqy.www.common.profile.ClientProfile;
+import com.xqjtqy.www.common.JsonResponseModel;
+import com.xqjtqy.www.common.Credential;
+import com.xqjtqy.www.scf.v20180416.models.*;
 
 public class ScfClient extends AbstractClient{
     private static String endpoint = "scf.tencentcloudapi.com";

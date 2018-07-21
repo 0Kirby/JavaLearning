@@ -1,5 +1,5 @@
 package com.xqjtqy.www.scf.v20180416.models;
-import www.xqjtqy.com.secondclassactivity.common.AbstractModel;
+import com.xqjtqy.www.common.AbstractModel;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.annotations.Expose;
 
@@ -12,7 +12,7 @@ public class InvokeResponse  extends AbstractModel{
     */
     @SerializedName("Result")
     @Expose
-    private www.xqjtqy.com.secondclassactivity.scf.v20180416.models.Result Result;
+    private com.xqjtqy.www.scf.v20180416.models.Result Result;
 
     /**
     * 唯一请求ID，每次请求都会返回。定位问题时需要提供该次请求的RequestId。
@@ -25,7 +25,7 @@ public class InvokeResponse  extends AbstractModel{
      * 获取函数执行结果
      * @return Result 函数执行结果
      */
-    public www.xqjtqy.com.secondclassactivity.scf.v20180416.models.Result getResult() {
+    public com.xqjtqy.www.scf.v20180416.models.Result getResult() {
         return this.Result;
     }
 
@@ -33,7 +33,7 @@ public class InvokeResponse  extends AbstractModel{
      * 设置函数执行结果
      * @param Result 函数执行结果
      */
-    public void setResult(www.xqjtqy.com.secondclassactivity.scf.v20180416.models.Result Result) {
+    public void setResult(com.xqjtqy.www.scf.v20180416.models.Result Result) {
         this.Result = Result;
     }
 

@@ -24,5 +24,6 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="D:/Android/sdk/platforms/android-27/android.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

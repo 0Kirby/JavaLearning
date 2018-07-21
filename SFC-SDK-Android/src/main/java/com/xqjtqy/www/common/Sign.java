@@ -23,7 +23,7 @@ import javax.crypto.Mac;
 import javax.crypto.spec.SecretKeySpec;
 
 
-import www.xqjtqy.com.secondclassactivity.common.exception.TencentCloudSDKException;
+import com.xqjtqy.www.common.exception.TencentCloudSDKException;
 
 /**
  * 签名工具类

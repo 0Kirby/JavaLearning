@@ -1,5 +1,5 @@
 package com.xqjtqy.www.scf.v20180416.models;
-import www.xqjtqy.com.secondclassactivity.common.AbstractModel;
+import com.xqjtqy.www.common.AbstractModel;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.annotations.Expose;
 import java.util.HashMap;

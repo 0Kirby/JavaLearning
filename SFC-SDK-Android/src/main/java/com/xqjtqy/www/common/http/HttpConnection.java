@@ -22,7 +22,7 @@ package com.xqjtqy.www.common.http;
 import com.squareup.okhttp.OkHttpClient;
 import com.squareup.okhttp.Request;
 import com.squareup.okhttp.Response;
-import www.xqjtqy.com.secondclassactivity.common.exception.TencentCloudSDKException;
+import com.xqjtqy.www.common.exception.TencentCloudSDKException;
 import com.squareup.okhttp.MediaType;
 import com.squareup.okhttp.RequestBody;
 

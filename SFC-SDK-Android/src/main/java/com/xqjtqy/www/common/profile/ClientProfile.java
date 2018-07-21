@@ -41,7 +41,7 @@ public class ClientProfile {
     /**
      * http相关选项，请参考HttpProfile
      */
-	private www.xqjtqy.com.secondclassactivity.common.profile.HttpProfile httpProfile;
+	private com.xqjtqy.www.common.profile.HttpProfile httpProfile;
 	
 	/**
 	 * 签名方法
@@ -52,17 +52,17 @@ public class ClientProfile {
 	 * @param signMethod  签名方法
 	 * @param httpProfile HttpProfile实例
 	 */
-	public ClientProfile(String signMethod, www.xqjtqy.com.secondclassactivity.common.profile.HttpProfile httpProfile) {
+	public ClientProfile(String signMethod, com.xqjtqy.www.common.profile.HttpProfile httpProfile) {
 		this.signMethod = signMethod;
 		this.httpProfile = httpProfile;
 	}
 	
 	public ClientProfile(String signMethod) {
-		this(signMethod, new www.xqjtqy.com.secondclassactivity.common.profile.HttpProfile());
+		this(signMethod, new com.xqjtqy.www.common.profile.HttpProfile());
 	}
 	
 	public ClientProfile() {
-		this(ClientProfile.SIGN_SHA256, new www.xqjtqy.com.secondclassactivity.common.profile.HttpProfile());
+		this(ClientProfile.SIGN_SHA256, new com.xqjtqy.www.common.profile.HttpProfile());
 	}
 	
 	/**
@@ -77,7 +77,7 @@ public class ClientProfile {
 	 * 设置http选项
 	 * @param httpProfile 参考HttpProfile
 	 */
-	public void setHttpProfile(www.xqjtqy.com.secondclassactivity.common.profile.HttpProfile httpProfile) {
+	public void setHttpProfile(com.xqjtqy.www.common.profile.HttpProfile httpProfile) {
 		this.httpProfile = httpProfile;
 	}
 	

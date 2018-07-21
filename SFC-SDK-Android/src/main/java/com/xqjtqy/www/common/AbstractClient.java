@@ -44,7 +44,7 @@ import com.xqjtqy.www.common.profile.HttpProfile;
 
 
 /**
- * 鎶借薄client绫�
+* 抽象client类
  */
 abstract public class AbstractClient {
 	
@@ -78,32 +78,32 @@ abstract public class AbstractClient {
 	}
 	
 	/**
-	 * 璁剧疆浜у搧鍦板煙
-	 * @param region 浜у搧鍦板煙
+	 * 设置产品地域
+	 * @param region 产品地域
 	 */
 	public void setRegion(String region) {
 		this.region = region;
 	}
 	
 	/**
-	 * 杩斿洖浜у搧鍦板煙
-	 * @return 鍦板煙鍚嶇О
+	 * 返回产品地域
+	 * @return 地域名称
 	 */
 	public String getRegion() {
 		return this.region;
 	}
 	
 	/**
-	 * 璁剧疆閰嶇疆瀹炰緥
-	 * @param profile 閰嶇疆瀹炰緥
+	 * 设置配置实例
+	 * @param profile 配置实例
 	 */
 	public void setClientProfile(ClientProfile profile) {
 		this.profile = profile;
 	}
 	
 	/**
-	 * 鑾峰彇閰嶇疆瀹炰緥
-	 * @return 閰嶇疆瀹炰緥
+	 * 获取配置实例
+	 * @return 配置实例
 	 */
 	public ClientProfile getClientProfile() {
 		return this.profile;
@@ -111,16 +111,16 @@ abstract public class AbstractClient {
 	
 	
 	/**
-	 * 璁剧疆璁よ瘉淇℃伅瀹炰緥
-	 * @param credential 璁よ瘉淇℃伅瀹炰緥
+	 * 设置认证信息实例
+	 * @param credential 认证信息实例
 	 */
 	public void setCredential(Credential credential) {
 		this.credential = credential;
 	}
 	
 	/**
-	 * 鑾峰彇璁よ瘉淇℃伅瀹炰緥
-	 * @return 璁よ瘉淇℃伅瀹炰緥
+	 * 获取认证信息实例
+	 * @return 认证信息实例
 	 */
 	public Credential getCredential() {
 		return this.credential;
@@ -208,7 +208,7 @@ abstract public class AbstractClient {
 			endpoint = this.profile.getHttpProfile().getEndpoint();
 		}
 		
-		String sigInParam = www.xqjtqy.com.secondclassactivity.common.Sign.makeSignPlainText(new TreeMap<String, String>(param),
+		String sigInParam = com.xqjtqy.www.common.Sign.makeSignPlainText(new TreeMap<String, String>(param),
 				this.profile.getHttpProfile().getReqMethod(), endpoint, this.path);
 		String sigOutParam = Sign.sign(this.credential.getSecretKey(), sigInParam, this.profile.getSignMethod());
 
