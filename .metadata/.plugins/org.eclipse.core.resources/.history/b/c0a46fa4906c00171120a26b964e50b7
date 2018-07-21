@@ -1,7 +1,0 @@
-package zuche;
-
-public class Vehicle {
-
-	private String Name;
-	
-}

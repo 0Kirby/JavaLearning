@@ -1,6 +1,0 @@
-package zuche;
-
-public interface Goods {
-
-	public abstract void goods();
-}

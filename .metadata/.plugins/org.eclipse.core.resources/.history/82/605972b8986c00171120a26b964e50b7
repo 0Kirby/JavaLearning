@@ -1,5 +1,0 @@
-package zuche;
-
-public interface Complex {
-
-}
