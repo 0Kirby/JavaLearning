@@ -3,6 +3,7 @@ package cp7;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.logging.Logger;
 
 public class ExceptionTest {
 
@@ -19,7 +20,8 @@ public class ExceptionTest {
 		}
 		
 		catch(IOException e){
-			e.printStackTrace();
+			//e.printStackTrace();
+			Logger.getLogger("ExceptionTest").severe(e.getMessage());;
 			
 		}
 	
