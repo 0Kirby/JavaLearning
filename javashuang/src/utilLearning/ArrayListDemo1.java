@@ -4,12 +4,13 @@ import java.util.ArrayList;
 
 public class ArrayListDemo1 {
 
-	@SuppressWarnings("deprecation")
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		ArrayList<Integer> al = new ArrayList<Integer>();
 		for (int i = 0; i < 10; i++) {
-		      Integer num = new Integer(i);    
+		      @SuppressWarnings("deprecation")
+			Integer num = new Integer(i);    
 		      al.add(num);                     
 		    }
 

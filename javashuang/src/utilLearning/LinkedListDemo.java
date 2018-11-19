@@ -4,12 +4,13 @@ import java.util.LinkedList;
 
 public class LinkedListDemo {
 
-	@SuppressWarnings("deprecation")
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		LinkedList<Double> ll = new LinkedList<Double> ();
 		for (int i = 1; i <= 10; i++) {
-		      Double temp = new Double(Math.sqrt(i));  
+		      @SuppressWarnings("deprecation")
+			Double temp = new Double(Math.sqrt(i));  
 		      ll.add(temp);
 		      }
 		//System.out.println(ll.toString());

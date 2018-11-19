@@ -5,9 +5,10 @@ public class Demo {
 	/**包装类
 	 * @param args
 	 */
-	@SuppressWarnings("deprecation")
+
 	public static void main(String[] args) {
 
+		@SuppressWarnings("deprecation")
 		Integer inte=new Integer(100);//对象
 		int inte_2=100;//变量
 		if(inte.intValue()==inte_2){
